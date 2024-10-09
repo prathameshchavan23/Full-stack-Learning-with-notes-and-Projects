@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+
+}
+html,body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 50px 90px;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-top: 150px;
+  gap: 60px;
+}
+
+#left {
+  height: 100%;
+  width: 45%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+#left h1 {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 100px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#bottom-left {
+  width: 100%;
+  /* height: 40%; */
+  /* background-color: yellow; */
+}
+
+#color {
+  /* background-color: blue; */
+  width: fit-content;
+  padding: 10px 15px;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  border-radius: 50px;
+  border: 2px solid black;  
+}
+#color1 {
+  margin: 3px;
+  height: 30px;
+  width: 30px;
+  background-color: burlywood;
+  border-radius: 50%;
+}
+#color2 {
+  height: 30px;
+  width: 30px;
+  background-color: brown;
+  border-radius: 50%;
+}
+
+#left h2 {
+  margin-top: 12px;
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+#left p{
+    font-size: 19px;
+    width: 70%;
+    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
+  line-height: 26px;
+}
+
+#right {
+    height: 90%;
+    width: 38%;
+    /* background-color: blue; */
+    position: relative;
+    margin: 25px;
+  }
+#right-top{
+    height: 50px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+#right-top h4{
+font-size: 20px;
+font-weight: 600;
+margin: 20px;
+}
+
+#right-top h5{
+    font-size: 16px; 
+    margin: 20%;  
+}
+#right-top h5 i{
+    color: goldenrod;
+}
+
+#right img{
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+}
+#blackgola{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(66, 66, 120);
+    color:#fff;
+    border-radius: 70%;
+    right: 10%;
+    top: 20%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#blackgola h5{
+    font-weight: 400;
+    font-family: "Playwrite NZ", cursive;
+}
+#rotated{
+    position: absolute;
+    rotate: -90deg;
+    left: -6%;
+    bottom: 0;
+    transform-origin: 0 0;
+    font-size:30px;
+    font-weight: 500;
+}

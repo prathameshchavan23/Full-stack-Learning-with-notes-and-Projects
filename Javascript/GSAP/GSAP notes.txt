@@ -1,0 +1,28 @@
+- GSAP is used for moving animations
+- GSAP cdn link should be copy paste before script tag in index.html file
+- gsap is a object and to & from are it's prop
+- It has four proper: to(),from(),fromTo(),set()
+- stagger property means give interval to load the elements after reloading for stagger:1 means 1sec of load
+- yoyo:true property is used when you have to move element forward and backwards boyh
+- cdn gsap scrolltrigger link should be copy for scroll trigger
+- in scrollTrigger when you use trigger use trigger for the parent element not on child element
+- How to Decide When to Use pin and scrub?
+Use pin when: You want an element to stay in one place for a while, even as the user scrolls. It’s great for things like:
+
+Fixing a heading to the top of the screen.
+Making a section or image stay visible longer while other content moves past it.
+Use scrub when: You want the speed of the scroll to control the animation. It’s perfect for animations that should feel interactive, like:
+
+A car moving across the screen as you scroll.
+An image zooming in or out based on how fast or slow you scroll.
+How to Choose the scrub Value:
+scrub: true: The animation will be tied directly to the scroll, moving smoothly as you scroll.
+scrub: <number>: Adding a number (like scrub: 1 or scrub: 2) makes the animation lag behind the scroll by that number of seconds. It creates a delayed effect.
+Tip for scrub:
+Use scrub: true if you want the animation to follow the scroll exactly.
+Use scrub: <number> if you want a more relaxed effect, where the animation trails behind the scroll.
+
+- order for GSAP cdn files : locomotive, GSAP , scrollTrigger, script.js
+
+- copy paste code from locomotive js codepen for JS
+- when using locomotive use scroller name as main or any other wrapper name

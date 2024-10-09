@@ -1,0 +1,34 @@
+/* Global reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure full height of html and body */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the download capsule (container) */
+#downloadcapsule {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 40px;
+    background-color: #dadada;
+    border-radius: 100px;
+    overflow: hidden; /* Ensures the progress stays within the capsule */
+}
+
+/* Styling for the progress bar */
+#progress {
+    transition: width 1s cubic-bezier(0.19, 1, 0.22, 1); /* Smooth transition for width */
+    width: 10%; /* Initial width */
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgb(65, 180, 65); /* Green progress color */
+}

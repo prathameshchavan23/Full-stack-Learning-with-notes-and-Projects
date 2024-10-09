@@ -1,0 +1,6 @@
+- favicon.ico file should be save in project for favicon's
+.ico should be extension
+- target="_blank" : to open link in new tab, write inside anchor tag
+- ol madhe type="a" or "a" tyachi numbering a kiva A pasun chalu hoel,start="" to start from any specific no or alphabet
+- Opening Tag + HTML Content + Closing Tag = HTML Element. Self Closing Tags also create Elements like horizontal rule tag (hr). 
+- 

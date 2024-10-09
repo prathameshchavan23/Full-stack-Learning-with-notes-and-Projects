@@ -1,0 +1,156 @@
+Imp concepts for JS:
+1. Variables
+2. functions
+- arrow functions
+-high order functions
+3. Array and objects
+-destructuring , rest , spread 
+4.conditional operator
+5.optional chaining
+6.array methods- map ,filter ,reduce ,sort
+7.event listeners - on click , on submit
+8. Intervals 
+9.callbacks , callbacks hell , promises , promise api
+10.async /await 
+11. Try /catch
+ 
+- script file should link in html at last before body tag ending
+-node filename in terminal to run in vs code
+- to access object properties we can use dot or bracket notation for eg: person.age or person['age'] 
+- when are playing with non Booleans there are two values one is falsy which contains undefined,null,false,0,Nan like values and truthy values means any value which is not falsy
+- in or operator there is a term which is called as short circuiting means "false"||2||3 here ans is 2 because false is falsy and after that there is 2 which is truthy so compiler not go further and print 2
+- when we create function inside object it's called as method
+- Stack(primitive) it copies the value , Heap (Reference) it takes reference of the variable.
+- The $ character identifies a string literal as an interpolated string. An interpolated string is a string literal that might contain interpolation expressions
+- split method splits string to array
+- using console.table you can print many variables at once for eg: console.Table([names]);
+- "use strict" it treats all JS code as newer version
+- it is preferred to use bracket method in object rather than dot operator
+- after return keyword nothing gets printed on console tab
+- you can pass arguments inside a function and print it
+- this keyword is applied for current context
+- null means empty value, empty value is a value , undefined means that a var or function has not given a value it is also called as garbage value or default value, not defined is a error means var is not declared
+- synchronous code goes line by line, asynchronous code goes all in one but which has less time it goes and compile first
+- value of this : Global - window, function : window, method : object, function inside method (es5) : window, arrow function inside method (es6) : object
+- monitor events(document) will get you every event on page that is triggered every second
+- ctrl+f to search in memory of console tab
+- closures : However, since inner functions have access to the variables of outer scope
+- The arguments object is a local variable available within all non-arrow functions. You can refer to a function's arguments inside that function by using its arguments object
+- innertext hides the hidden text for eg: display:none but textContent
+- Difference between element and node:-
+
+ 1.) A node is a general term that can refer to any type of object in the DOM, whereas an element specifically refers to HTML elements.
+
+2.) Element is the subset of Nodes.
+
+3)Both nodes and elements share some common properties and methods, but elements have additional properties and methods specifically for dealing with HTML elements (like id, className, innerHTML, etc.).
+
+4.)Elements are used to manipulate HTML content directly, whereas nodes are used when dealing with any object in the DOM hierarchy.
+
+- keyup,keydown,keypress types of keyboard events, we need to put this on focusable element like URL, mouse, console, input for non focusable element we use tabindex=0, we put tabindex on window
+
+- target is a property of event listener we can get value of this target property
+// Here the target is input element then target.value gives the value which we're firing on event
+
+document.addEventListener("input",  (e) => {
+document.addEventListener("change",  (e) => {  
+//above statement is used when we want to replca the input after typing of user
+
+  console.log("input event",e.target.value);
+  paragraph.innerText = e.target.value //value will be replaced by input
+});  
+
+- when we click on event for eg: input then it is called as focus and when you are out of input box then it is called as blur
+-form tag madhe input and button tag takla tar purna page load hoto 
+- The MouseEvent interface represents events that occur due to the user interacting with a pointing device (such as a mouse). Common events using this interface include click, dblclick, mouseup, mousedown,mouseenter(after even entering on mouse event triggers), mouseleave,mousemove(amt of times we move the mouse in the button, event get's trigger ), mouseover(functioning is same but when there is child element then it also fires the event to child element but it's not in mouse enter), wheel (our mouse wheel for up and down, when we wheeled the mouse), scroll (not a mouse event it triggers on any element like body but in root we have html element so we have add event listener on document tag ), touchstart & touchend,touchmove (both triggers on mobile device),we have pointer events replacing mouse events (pointermove, pointerenter,pointerleave) ,drag (make the div draggable), 
+- to drag any div we can attribute as draggable 
+- event bubbling: every child inherits it's every event or property to it's child , means parent la event dilyavar child vr pan jael and also document and window , parent propogates the event to every child and window to stop this we use .stopPropogation()
+- input.focus() to focus on any input page after reloading, input.blur() to unfocused input, 
+- .then((response) => response.json())
+ The response represents the HTTP response object returned from the fetch() request. This method is called on the response object. It processes the raw HTTP response and converts it to JSON format. The json() method itself returns another promise, which resolves when the response is successfully parsed into JSON.
+- XHR(XMLhttprequest) to call this we have to use new keyword eg; new XMLhttprequest()
+- finally block in Try & catch runs in any case defaultly
+
+-  Hoisting:- Hoisting in JavaScript is a process in which all the Variables, Functions and Class definition are declared BEFORE execution of the code
+
+1. Variable declarations are scanned and are made undefined
+2. Function declarations are scanned and are made available
+and arrow function behave like a variable in memory creation phase.
+
+- Whenever there is a function declaration in the code, a separate local execution context gets created having its own phases and is pushed into the call stack.
+* Once the function ends, the EC is removed from the call stack. When the program ends, even the global EC is pulled out of the call stack.
+
+- JS is a loosely typed language or weakly typed language(Dynamic lang)means it does not attaches its variables to specific data types like in C++ and java which are static type of lang.
+
+Var : 
+a) The scope is global when a var variable is declared outside a function. This means that any variable that is declared with var outside a function block is available for use in the whole window.
+b) var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.
+
+Let: A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block. So a variable declared in a block with let is only available for use within that block.
+
+- JavaScript engine first looks for the variable or function being accessed in the local scope of the function, and if not found, it keeps on searching the lexical environment of its parent until it finds the variable/function being accessed is called scope chain
+- If the variable accessed is not found in the Scope Chain, then you will get the variable is not defined error in the  browser's console
+
+- We cannot redeclare the same variable with let/const(even with using var the second time).
+- const variable declaration and initialisation must be done on the same line. it can throw type error.
+
+-Block values are stored inside separate memory than global. They are stored in block. (the reason let and const are called block scope)
+Shadowing of variables using var, let and const.
+The shadow should not cross the scope of original otherwise it will give error. Shadowing let with var is illegal shadowing and gives error. var value is stored in nearest outer function or global scope and hence can be accessed outside block as well whereas same is not the case with let and const.
+
+- Reference error: when you have not declared any variable still trying to access it, syntax error: any syntax related issues, type error: as we have to initialize const after declare and any typing error
+
+- {}(block) we write compound statement here to group multiple statements inside a block
+
+- Closure :Function bundled with its lexical environment is known as a closure. Whenever function is returned, even if its vanished in execution context but still it remembers the reference it was pointing to. Its not just that function alone it returns but the entire closure
+
+- 1.set Timeout stores the function in a different place and attached a timer to it, when the timer is finished it rejoins the call stack and executed.
+2. Without closure the var reference gives the latest value as it does not retain the original value but rather has the reference so any update in value after timeout will be shown.
+3. If we use let/const because they have block scope, every time a new copy of variable is attached, thus this can be done without closure.
+
+
+-For those having difficulty like me in understanding why each iteration creates its own closure or stores i in a separate memory space unlike var.
+You can think of each iteration of for-loop like a mini function almost, with new/different value of i (1,2,3,4,5) and since let is block scoped (block scope meaning within the curly braces of each mini-function) it stores reference to i at different place (different closure made by different mini-functions).
+Also that, a closure closes over or captures the current scope when the callback function is passed to setTimeout.. But why does it closes over when call back function is called?
+Because a closure is formed when a function is created inside another function and the inner function has access to the outer function's variables and parameters.
+
+- 1. map method is used when we want transformation of whole array.
+2. filter is used when we want to filter the array to obtain required value.
+3. reduce is used when we want to reduce the array to single value eg (max, min, avg, sum, difference etc).
+4. reduce passes two arguments one function(which includes accumulator and initial value as argument itself) and another initial value of accumulator.
+
+- these special web API’s exist in the browser environment not inside the JavaScript environment. So you can say that these APIs introduce concurrency into the mix.
+
+- The main thread is where a browser processes user events and paints. By default, the browser uses a single thread to run all the JavaScript in your page, as well as to perform layout, reflows, and garbage collection. This means that long-running JavaScript functions can block the thread, leading to an unresponsive page and a bad user experience.
+The less work required of the main thread, the more that thread can respond to user events, paint, and generally be responsive to the user.
+
+- set Timeout((),0) with 0 seconds will also give last output as it has to go through whole process from web api's to register callback to callback queue,etc.
+
+- for arrow functions, it's important to declare a variable using let, var, or const and then use that variable name to call the function.
+
+- Asynchronous is a non-blocking architecture, so the execution of one task isn't dependent on another. Tasks can run simultaneously. Synchronous is a blocking architecture, so the execution of each operation depends on completing the one before it. Each task requires an answer before moving on to the next iteration.
+There are mainly three ways in which we can code asynchronism in JavaScript: callback functions, promises, and async-await.
+
+- let and const: These variables are subject to the TDZ. They are hoisted but not initialized until their declaration is encountered, so accessing them before this will cause an error.
+
+var: Not affected by the TDZ. It is hoisted and initialized with undefined, so it can be accessed before its declaration, though its value will be undefined until assigned.
+
+
+- The normal, non-strict mode of JavaScript is sometimes referred to as sloppy mode
+
+- function inside a object is called as method
+
+- Type coercion refers to the automatic conversion of values from one data type to another, typically performed during operations or comparisons involving different data types. By using Type Coercion, JavaScript attempts to make the data types compatible to complete the operation or comparison.
+
+ - A Pseudo class is used to define a special state of an element.
+The name of the pseudo class is preceded by a single colon.
+:hover, :first-child, :nth-child, last-child etc ..
+
+- Any attribute whose name starts with data- is a custom attribute. The data-* attributes allow us to embed custom attributes on all HTML elements. These are completely ignored by the user. The data stored can be used in JavaScript of the page. We can also use these data attributes to style our elements.
+
+
+
+
+
+
+

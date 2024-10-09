@@ -1,0 +1,41 @@
+Use CSS tricks website for CSS
+- pixels is based on your screen , it doesn't change when you minimize ur screen it can affect user experience
+- % use can be help as it can go help user exp and changes according to responsiveness, it takes value from his parent
+- vmax: jo view port like width or height jyada hoga uske hisab se it will change, vmin: opposite jo kam hoga viewport uske hisab se it will change
+- vw and vh works value according to screen
+- em works based on font size means if font size is 12 px and width and height is 2em then it takes 24px,imp to give font size at em
+- rem(1rem = 16px) takes value from root element that is html ka font size * it's width or height for eg: 12px(font size) * 2rem(width and height):- 24rem
+- max-width or hieght is tha maximum pixels you given to any screen you can't vary it and for min width or height you can't vary less than that
+- padding means how far your child element is away from parent and margin creates gap between two elements, 
+- IN FLEXBOX, you have to declare flexbox to parent not to child, if you have to change anything in child use Justify-self property , here x axis is main axis it works on justify content property, it goes from left to right and y axis is cross axis it works on align content , it works on top to bottom 
+- flex-wrap : wrap , prop to make flex responsive
+- display block means it'll not allow any element around it ,even
+- display inline means it'll allow any element around it, if it have space, it doesn't allow to increase width or height so to increase it's width use display: inline-block
+- position: absolute means the box goes up but can't be seen , relative means relative to it's parent but you need to give position: relative to parent and absolute to child , position fixed means it'll be fixed even when we scroll the website
+- background :URL(""), background-size: cover to show image, to center image background-position: center, background-repeat: no-repeat to not repeat image , sometime it gets repeat due to empty space, background: linear-gradient(to right or any position,color1,color2,..);
+- pseudo classes : hover, first-child, active,focus , box: nth-child(2n/odd/even): every 2nd element of box will be given the following property
+- pseudo elements: first-line, before, after (we have to declare content property when using after and before) 
+- max value of colors in css is 255 and min is 0 in rgb, if we take high intensity i.e 255 for red,green,blue then mixture of this colors is white and vice versa will be black and also rgb(0,1,3) here higher no is 3 so blue will be involved more intensily in the color
+- using #code #refers hexadecimal value # value should be taken from color palette,rgba(a is alpha fully transparent) 
+- !important keyword for more priority
+- grouping selector: p,article{}, for element under p p.paraclass{}
+- 1fr(fraction) can be used it means if screen has 3000px then we take 3fr it will be 3000/3 means each will get 1000 pixels, grid template column: 1fr 1fr 1fr or grid template column: repeat(3,fr)
+- grid area property where u can decide where you can start the row or column , grid area: grid-row-start, grid-column-start, grid-row-end, grid-column-end
+- the lines in the grid area indicate the gap between it's row or column also including it's around space
+- grid auto rows: minmax(100px,auto) is a function where you can minimum rows also max but we don't the exact pixel size of device so we use auto for it.
+- grid-template-column: repeat(autofit, minmax(200px,500px)) //here content will be fit as per device and size of content will be from 200 to 500 px
+1) auto-fill: Fit as many possible columns as possible on a row, even if they are empty.
+2) auto-fit: Fit whatever columns there are into the space. 
+- grid-template-areas use krun we can manage every part of website together
+-  @keyframes is used to apply animation, using from, to and the given name to keyframes should be given to the respected attribute to make it apply on attribute with property animation-name, animation-duration ,animation-iteration count, animation delay, animation timing function(to control speed of the attribute)
+- animation direction property describes the direction of the box defaultly it's normal and alternate means at both direction
+- animation timing function shows how the box should move like linear, ease-in means slow at start ease-out means slow at end
+- transition effect madhe we can give width and height different timing
+- margin: auto goes to center
+- autofit 
+- for z axis transform you need to add perspective 
+- position should be relative for parent element
+- letterspacing means the space between letters, border can be managed using top or right 
+- video tag madhe autopay and loop should be added besides id
+- white space
+- 

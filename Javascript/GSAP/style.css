@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
+#box1,
+#box2,
+#box3 {
+  width: 100%;
+  height: 100vh; /* Use viewport height to ensure each box takes up full screen height */
+}
+
+#box1 {
+  color: skyblue;
+  background-color: crimson;
+}
+
+#box2 {
+  color: rgb(128, 179, 199);
+  background-color: blue;
+}
+
+#box3 {
+  color: rgb(155, 179, 189);
+  background-color: black;
+}

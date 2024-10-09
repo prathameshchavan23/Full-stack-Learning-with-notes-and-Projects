@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #e3e3c4;
+  }
+  
+  #page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #556043;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #page2 h1 {
+    color: #434b34;
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 0.5vw 0;
+    font-weight: 400;
+    font-family: PP woodland;
+    overflow: hidden;
+    line-height: 2.5vw;
+  }
+  
+  #page2 h1 span {
+    color: transparent; /* Initially transparent so the animation is noticeable */
+    font-family: PP woodland;
+  }
+  
+  #page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #e3e3c4;
+  }
+  
