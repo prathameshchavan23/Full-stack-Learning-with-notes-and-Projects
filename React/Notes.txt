@@ -1,1 +1,8 @@
+- To install Vite use command : npm create vite@latest
+give file name , select react, select JavaScript , then given commands should be run accordingly then the project name given folder will be created on vs code, do all this in cmd or Vs code
+- JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.it has some superpower
+- it converts html to React.createElement , means it can do calculation inside html like 2+2 that we can't do in normal html
+- ctrl + ` shortcut to open terminal
+- rfce shortcut key whole code
+- If you meant to render a React component, start its name with an uppercase letter.
 - 
